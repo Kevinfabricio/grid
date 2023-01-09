@@ -1,0 +1,38 @@
+.container {  
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "CABECERA CABECERA CABECERA"
+      "MENU PRINCIPAL DERECHA"
+      "MENU PIE-DE-PAGINA PIE-DE-PAGINA";
+  }
+  
+  .CABECERA { 
+    grid-area: CABECERA; 
+    background: salmon;
+}
+  
+  .MENU { 
+    grid-area: MENU; 
+    background: green;
+}
+  
+  .PRINCIPAL { 
+    grid-area: PRINCIPAL; 
+    background: silver;
+}
+  
+  .DERECHA { 
+    grid-area: DERECHA; 
+    background: thistle;
+}
+  
+  .PIE-DE-PAGINA { 
+    grid-area: PIE-DE-PAGINA; 
+    background: aqua;
+}
+  
